@@ -1,0 +1,21 @@
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  max-width: 800px; /* Increase form width */
+  background-color: whitesmoke; /* Light grey background for form */
+  padding: 70px;
+  border-radius: 8px;
+  margin-right: 80px;
+  padding-right:90px;
+  
+}
+
+mat-form-field {
+  background-color: #fff; /* White background for form fields */
+  width: 100%;
+}
+.mat-form-field-infix {
+  width: 100%; /* Ensure the input field takes full width */
+}
