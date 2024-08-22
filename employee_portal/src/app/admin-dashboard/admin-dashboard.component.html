@@ -1,0 +1,10 @@
+<div>
+    <h1>Admin Dashboard</h1>
+    <input matInput placeholder="Search" (input)="onSearch($event.target.value)">
+    <div *ngFor="let employee of filteredEmployees" class="employee-card">
+      <p>Name: {{ employee.name }}</p>
+      <p>Department: {{ employee.department }}</p>
+      <button mat-raised-button (click)="deleteEmployee(employee)">Delete</button>
+    </div>
+  </div>
+  

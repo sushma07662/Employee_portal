@@ -1,1 +1,38 @@
-{}
+{
+    "users": [
+      {
+        "id": 1,
+        "name": "John Doe",
+        "age": 30,
+        "mob": "1234567890",
+        "department": "HR",
+        "role": "admin"
+      },
+      {
+        "id": 2,
+        "name": "Jane Smith",
+        "age": 25,
+        "mob": "0987654321",
+        "department": "Finance",
+        "role": "employee"
+      },
+      {
+        "id": 3,
+        "name": "Alice Johnson",
+        "age": 28,
+        "mob": "1122334455",
+        "department": "IT",
+        "role": "employee"
+      },
+      {
+        "id": 4,
+        "name": "Bob Brown",
+        "age": 35,
+        "mob": "6677889900",
+        "department": "Marketing",
+        "role": "admin"
+      }
+    ]
+  }
+  
+  

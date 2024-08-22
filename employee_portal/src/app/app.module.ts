@@ -10,12 +10,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import { EmployeeDashboardComponent } from './employee-dashboard/employee-dashboard.component';
+import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SignupAdminComponent,
-    SignupEmployeeComponent
+    SignupEmployeeComponent,
+    EmployeeDashboardComponent,
+    AdminDashboardComponent
   ],
   imports: [
     BrowserModule,

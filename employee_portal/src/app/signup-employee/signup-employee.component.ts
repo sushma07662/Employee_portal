@@ -1,6 +1,6 @@
+
 import { Component } from '@angular/core';
-import { createSignupForm } from '../signup-form';
-import { HttpClient } from '@angular/common/http';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-signup-employee',
@@ -8,16 +8,24 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./signup-employee.component.scss']
 })
 export class SignupEmployeeComponent {
-  signupForm = createSignupForm();
+  signupForm: FormGroup;
 
-  constructor(private http: HttpClient) {}
+  constructor(private fb: FormBuilder) {
+    this.signupForm = this.fb.group({
+      name: ['', Validators.required],
+      age: ['', [Validators.required, Validators.min(18)]],
+      mobile: ['', [Validators.required, Validators.pattern('^[0-9]{10}$')]],
+      department: ['', Validators.required],
+      role: ['employee']
+    });
+  }
 
   onSubmit() {
     if (this.signupForm.valid) {
-      const employeeData = { ...this.signupForm.value, role: 'employee' };
-      this.http.post('http://localhost:3000/users', employeeData).subscribe(response => {
-        console.log('Employee Data:', response);
-      });
+      const formData = this.signupForm.value;
+      console.log('Employee Form Data:', formData);
+      // Here you can handle the form data, e.g., send it to a server
     }
   }
 }
+
