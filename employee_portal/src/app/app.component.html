@@ -1,12 +1,5 @@
-<div class="container">
-    <h1 *ngIf="showAdminForm">Admin Sign Up</h1>
-    <h1 *ngIf="!showAdminForm">Employee Sign Up</h1>
-  
-    <button mat-raised-button color="primary" (click)="toggleForm()">
-      {{ showAdminForm ? 'Switch to Employee Sign Up' : 'Switch to Admin Sign Up' }}
-    </button>
-  
-    <app-signup-admin *ngIf="showAdminForm"></app-signup-admin>
-    <app-signup-employee *ngIf="!showAdminForm"></app-signup-employee>
-  </div>
-  
+<!-- 
+<p>asdfg</p>
+<app-login></app-login> -->
+<!-- <app-signup></app-signup> -->
+<router-outlet></router-outlet>

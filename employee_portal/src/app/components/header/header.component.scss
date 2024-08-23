@@ -1,0 +1,121 @@
+body {
+    background-color: palevioletred; // Background color for the entire screen
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-container {
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup-form {
+    background-color: plum; 
+    padding: 1.5rem; // Reduced padding
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px; // Reduced max-width
+    height: auto;
+    margin: 10px;
+}
+
+.signup-form mat-form-field {
+    width: 100%;
+    margin-bottom: 0.75rem; // Reduced margin-bottom
+}
+
+.signup-form button {
+    width: 100%;
+    height: 25px;
+}
+
+::ng-deep .mat-mdc-form-field-subscript-wrapper {
+    height: 0px;
+}
+
+::ng-deep .mat-mdc-text-field-wrapper {
+    height: 50px !important;
+}
+
+::ng-deep .toggle-btn {
+    margin-top: 10px;
+    background-color: #5c6bc0; // Changed background color
+}
+
+::ng-deep .signup-btn {
+    height: 40px !important;
+    background-color: #8e24aa; // Changed background color
+}
+
+.header-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    background-color: plum; // Changed background color to match signup form
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); // Updated box-shadow to match signup form
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo .title {
+    margin-left: 8px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+.search-container {
+    position: relative;
+    width: 30%;
+}
+
+.search-bar {
+    width: 80%;
+    transition: width 0.3s ease-in-out;
+}
+
+.search-bar input {
+    width: 80%;
+}
+
+.search-bar:focus-within {
+    width: 100%;
+}
+
+::ng-deep .mat-mdc-form-field-subscript-wrapper {
+    height: 0px !important;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+}
+
+.user-info mat-icon {
+    margin-right: 8px;
+}
+
+.logout-button {
+    display: flex;
+    align-items: center;
+}
+
+.logout-button mat-icon {
+    margin-right: 4px;
+}

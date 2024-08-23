@@ -1,0 +1,46 @@
+{
+    "user": [
+      {
+        "id": "0d1d",
+        "name": "sushma",
+        "dob": "2002-03-12T18:30:00.000Z",
+        "mobile": "7989980341",
+        "role": "user",
+        "department": "Admin",
+        "email": "sushma123@gmail.com",
+        "password": "123456"
+      },
+      {
+        "id": "b7bc",
+        "name": "priya",
+        "dob": "2019-08-02T18:30:00.000Z",
+        "mobile": "1234567890",
+        "role": "user",
+        "department": "HR",
+        "email": "priya@gmail.com",
+        "password": "123456"
+      }
+    ],
+    "admin": [
+      {
+        "id": "c28f",
+        "name": "lily",
+        "dob": "2001-07-04T18:30:00.000Z",
+        "mobile": "8688940922",
+        "role": "admin",
+        "department": "admin",
+        "email": "lily@gmail.com",
+        "password": "123456"
+      },
+      {
+        "id": "b505",
+        "name": "kriti",
+        "dob": "2024-08-08T18:30:00.000Z",
+        "mobile": "7989980351",
+        "role": "admin",
+        "department": "admin",
+        "email": "kriti@gmail",
+        "password": "123456"
+      }
+    ]
+  }

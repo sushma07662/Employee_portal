@@ -6,10 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  showAdminForm = true;
-
-  toggleForm() {
-    this.showAdminForm = !this.showAdminForm;
-  }
+  title = '03_Employeee_Data_Portal';
 }
-
